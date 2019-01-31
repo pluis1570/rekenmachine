@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
+  <title>Zakrekenmachine</title>
+</head>
+
+<body >
+  <div id="cursor" class="bigcrosser">
+  </div>
+  <div id="cursor2" class="crosser">
+  </div>
+  <div id="cursor" class="crosservertical">  
+  </div>
+  <div id="cursor" class="circle">
+ 
+    <div id="cursor" class="rekenmachine">
+      <form name="rekenmachine">
+       
+        <div>
+          <input id="cursor" type="text" name="show" value="">
+          <input id="cursor" type="button" name="Clear" value="C" onclick="rekenmachine.show.value =''">
+        </div>
+
+        <div class="input">
+
+          <input id="cursor" type="button" value="7" onclick="rekenmachine.show.value +='7'">
+          <input id="cursor" type="button" value="8" onclick="rekenmachine.show.value +='8'">
+          <input id="cursor" type="button" value="9" onclick="rekenmachine.show.value +='9'">
+          <input id="cursor" type="button" class="operator" value="/" onclick="rekenmachine.show.value +='/'">
+        </div>
+
+        <div class="input">
+          <input id="cursor" type="button" value="4" onclick="rekenmachine.show.value +='4'">
+          <input id="cursor" type="button" value="5" onclick="rekenmachine.show.value +='5'">
+          <input id="cursor" type="button" value="6" onclick="rekenmachine.show.value +='6'">
+          <input id="cursor" type="button" class="operator" value="*" onclick="rekenmachine.show.value +='*'">
+        </div>
+
+        <div class="input">
+          <input id="cursor" type="button" value="1" onclick="rekenmachine.show.value +='1'">
+          <input id="cursor" type="button" value="2" onclick="rekenmachine.show.value +='2'">
+          <input id="cursor" type="button" value="3" onclick="rekenmachine.show.value +='3'">
+          <input id="cursor" type="button" class="operator" value="-" onclick="rekenmachine.show.value +='-'">
+        </div>
+
+        <div class="input">
+          <input id="cursor" type="button" value="," onclick="rekenmachine.show.value +='.'">
+          <input id="cursor" type="button" value="0" onclick="rekenmachine.show.value +='0'">
+          <input id="cursor" type="button" name="bereken" value="=" onclick="rekenmachine.show.value =eval(rekenmachine.show.value)">
+          <input id="cursor" type="button" class="operator" value="+" onclick="rekenmachine.show.value +='+'">
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
