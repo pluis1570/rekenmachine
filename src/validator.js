@@ -1,10 +1,35 @@
-/*function checkOperator(){
-    var operation = document.getElementsByClassName("operator");
-    var string = document.getElementsByName('show');
-    var lastChar = string.charAt(string.length-1);
+function checkOperatordeel(){
+    var elementShow = document.getElementsByName('show')[0];
+    var text = elementShow.value;
+    var lastChar = text.charAt(text.length-1);
 
-    if(lastChar === operation){
-        var restring =string.replace(operation,operation);
-        return restring;
-    }
-}*/
+    if(lastChar !== '/'){
+        elementShow.value = text + '/'
+    }}
+
+    function checkOperatormaal(){
+    var elementShow = document.getElementsByName('show')[0];
+    var text = elementShow.value;
+    var lastChar = text.charAt(text.length-1);
+
+    if(lastChar !== '*'){
+        elementShow.value = text + '*'
+    }}
+
+    function checkOperatorplus(){
+    var elementShow = document.getElementsByName('show')[0];
+    var text = elementShow.value;
+    var lastChar = text.charAt(text.length-1);
+
+    if(lastChar !== '+'){
+        elementShow.value = text + '+'
+    }}
+
+    function checkOperatormin(){
+    var elementShow = document.getElementsByName('show')[0];
+    var text = elementShow.value;
+    var lastChar = text.charAt(text.length-1);
+
+    if(lastChar !== '-'){
+        elementShow.value = text + '-'
+    }}
