@@ -1,3 +1,9 @@
+document.getElementById('deel').addEventListener('click',checkOperatordeel);
+document.getElementById('maal').addEventListener('click',checkOperatormaal);
+document.getElementById('min').addEventListener('click',checkOperatormin);
+document.getElementById('plus').addEventListener('click',checkOperatorplus);
+
+
 function checkOperatordeel(){
     var elementShow = document.getElementsByName('show')[0];
     var text = elementShow.value;

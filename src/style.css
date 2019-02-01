@@ -69,11 +69,11 @@
    float: left;
  }
 
- #cursor {
+ .cursor {
    cursor: url('./cursor\(1\).png'), auto;
  }
 
- #cursor2 {
+ .cursor2 {
    cursor: url('./cursor\(2\).png'), auto;
  }
 

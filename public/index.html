@@ -10,92 +10,51 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <title>Zakrekenmachine</title>
-  <script>
-    function checkOperatordeel() {
-      var elementShow = document.getElementsByName('show')[0];
-      var text = elementShow.value;
-      var lastChar = text.charAt(text.length - 1);
-
-      if (lastChar !== '/') {
-        elementShow.value = text + '/'
-      }
-    }
-
-    function checkOperatormaal() {
-      var elementShow = document.getElementsByName('show')[0];
-      var text = elementShow.value;
-      var lastChar = text.charAt(text.length - 1);
-
-      if (lastChar !== '*') {
-        elementShow.value = text + '*'
-      }
-    }
-
-    function checkOperatorplus() {
-      var elementShow = document.getElementsByName('show')[0];
-      var text = elementShow.value;
-      var lastChar = text.charAt(text.length - 1);
-
-      if (lastChar !== '+') {
-        elementShow.value = text + '+'
-      }
-    }
-
-    function checkOperatormin() {
-      var elementShow = document.getElementsByName('show')[0];
-      var text = elementShow.value;
-      var lastChar = text.charAt(text.length - 1);
-
-      if (lastChar !== '-') {
-        elementShow.value = text + '-'
-      }
-    }
-  </script>
 </head>
 
 <body>
-  <div id="cursor" class="bigcrosser">
+  <div class="bigcrosser cursor">
   </div>
-  <div id="cursor2" class="crosser">
+  <div class="crosser cursor2">
   </div>
-  <div id="cursor" class="crosservertical">
+  <div class="crosservertical cursor">
   </div>
-  <div id="cursor" class="circle">
-    <div id="cursor" class="rekenmachine">
+  <div class="circle cursor">
+    <div class="rekenmachine cursor">
       <form name="rekenmachine">
 
         <div>
-          <input id="cursor" type="text" name="show" value="">
-          <input id="cursor" type="button" name="Clear" value="C" onclick="rekenmachine.show.value =''">
+          <input class="cursor" type="text" name="show" value="">
+          <input class="cursor" type="button" name="Clear" value="C" onclick="rekenmachine.show.value =''">
         </div>
 
         <div class="input">
 
-          <input id="cursor" type="button" value="7" onclick="rekenmachine.show.value +='7'">
-          <input id="cursor" type="button" value="8" onclick="rekenmachine.show.value +='8'">
-          <input id="cursor" type="button" value="9" onclick="rekenmachine.show.value +='9'">
-          <input id="cursor" type="button" class="operator" value="/" onclick="checkOperatordeel()">
+          <input class="cursor" type="button" value="7" onclick="rekenmachine.show.value +='7'">
+          <input class="cursor" type="button" value="8" onclick="rekenmachine.show.value +='8'">
+          <input class="cursor" type="button" value="9" onclick="rekenmachine.show.value +='9'">
+          <input id="deel" type="button" class="operator cursor" value="/" onclick="checkOperatordeel()">
         </div>
 
         <div class="input">
-          <input id="cursor" type="button" value="4" onclick="rekenmachine.show.value +='4'">
-          <input id="cursor" type="button" value="5" onclick="rekenmachine.show.value +='5'">
-          <input id="cursor" type="button" value="6" onclick="rekenmachine.show.value +='6'">
-          <input id="cursor" type="button" class="operator" value="*" onclick="checkOperatormaal()">
+          <input class="cursor" type="button" value="4" onclick="rekenmachine.show.value +='4'">
+          <input class="cursor" type="button" value="5" onclick="rekenmachine.show.value +='5'">
+          <input class="cursor" type="button" value="6" onclick="rekenmachine.show.value +='6'">
+          <input id="maal" type="button" class="operator cursor" value="*" onclick="checkOperatormaal()">
         </div>
 
         <div class="input">
-          <input id="cursor" type="button" value="1" onclick="rekenmachine.show.value +='1'">
-          <input id="cursor" type="button" value="2" onclick="rekenmachine.show.value +='2'">
-          <input id="cursor" type="button" value="3" onclick="rekenmachine.show.value +='3'">
-          <input id="cursor" type="button" class="operator" value="-" onclick="checkOperatormin()">
+          <input class="cursor" type="button" value="1" onclick="rekenmachine.show.value +='1'">
+          <input class="cursor" type="button" value="2" onclick="rekenmachine.show.value +='2'">
+          <input class="cursor" type="button" value="3" onclick="rekenmachine.show.value +='3'">
+          <input id="min" type="button" class="operator cursor" value="-" onclick="checkOperatormin()">
         </div>
 
         <div class="input">
-          <input id="cursor" type="button" value="," onclick="rekenmachine.show.value +='.'">
-          <input id="cursor" type="button" value="0" onclick="rekenmachine.show.value +='0'">
-          <input id="cursor" type="button" name="bereken" value="=" onclick="rekenmachine.show.value =eval(rekenmachine.show.value)">
-          <input id="cursor" type="button" class="operator" value="+" onclick="checkOperatorplus()">
+          <input class="cursor" type="button" value="," onclick="rekenmachine.show.value +='.'">
+          <input class="cursor" type="button" value="0" onclick="rekenmachine.show.value +='0'">
+          <input class="cursor" type="button" name="bereken" value="=" onclick="rekenmachine.show.value =eval(rekenmachine.show.value)">
+          <input id="plus" type="button" class="operator cursor" value="+" onclick="checkOperatorplus()">
 
         </div>
       </form>
